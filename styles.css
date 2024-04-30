@@ -8,10 +8,33 @@ body {
   font-family: "Open Sans";
   font-size: 20px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
 
+  .logo-holder {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: black;
+    
+    .logo-text {
+      /* font-size: 32px; */
+    }
+
+    .logo-pic {
+      height: 64px;
+      width: 64px;
+      font-size: 32px;
+      padding-left: 14px;
+      padding-top: 5px;
+    }
+  }
 }
 
 h1 {
@@ -40,13 +63,6 @@ a {
   color: black;
 }
 
-.logo-holder {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  color: black;
-}
-
 nav {
   display: flex;
 
@@ -59,12 +75,23 @@ nav {
     gap: 5px;
     li {
       padding: 10px 20px;
+      .button {
+        background-color: rgb(197, 14, 44);
+        padding: 10px 30px;
+        border-radius: 10px;
+
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: white;
+      }
     }
   }
   .mobile-toggle {
     display: none;
     @media (max-width: 768px) {
       display: flex;
+      height: 48px;
+      width: 48px;
     }
   }
 }
@@ -104,11 +131,8 @@ section {
 
       margin-top: 20px;
       margin-bottom: 10px;
-      a {
-        color: white;
-        margin-right: 10px;
-        margin-bottom: 10px;
-      }
+      color: white;
+      text-align: center;
     } 
   }
 
